@@ -1,14 +1,7 @@
 import './App.css';
-
+import Layout from "./components/Layout/Layout";
 function App() {
-  return (
-    <div className="App">
-      car rental
-      <button className='btn'>
-        tıkla
-      </button>
-    </div>
-  );
+  return <Layout/>
 }
 
 export default App;
