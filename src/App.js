@@ -1,10 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      ca rental
+      car rental
+      <button className='btn'>
+        tıkla
+      </button>
     </div>
   );
 }
