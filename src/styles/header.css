@@ -7,13 +7,19 @@
     display: flex;
     align-items: center;
     column-gap: 1rem;
-    background: red;
+    /* background: red; */
 }
 .header__top__help{
     display: flex;
     align-items: center;
     column-gap: 0.4rem;
-    background: green;
+    /* background: green; */
+}
+.header__top__help i{
+    background: #fff;
+    color: #000db6;
+    padding: 2px 4px ;
+    border-radius: 50%;
 }
 
 
