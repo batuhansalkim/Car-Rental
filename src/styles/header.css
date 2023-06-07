@@ -1,0 +1,26 @@
+.header__top{
+    padding: 10px 0px;
+    background: #000d6b;
+    color: #fff;
+}
+.header__top__left{
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+    background: red;
+}
+.header__top__help{
+    display: flex;
+    align-items: center;
+    column-gap: 0.4rem;
+    background: green;
+}
+
+
+
+
+
+
+
+
+
