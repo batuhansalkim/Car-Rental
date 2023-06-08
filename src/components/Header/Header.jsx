@@ -1,11 +1,36 @@
 import React from 'react'
 import {Container,Row,Col} from "reactstrap";
-import { Link } from 'react-router-dom';
+import { Link,NavLink } from 'react-router-dom';
 import "../../styles/header.css";
+
+const navLinks = [
+  {
+    path:"/home",
+    display:"home"
+  },
+  {
+    path:"/about",
+    display:"About"
+  },
+  {
+    path:"/cars",
+    display:"Cars"
+  },
+  {
+    path:"/blog",
+    display:"Blog"
+  },
+  {
+    path:"/contact",
+    display:"Contact"
+  }
+]
 
 function Header() {
   return (
     <header className='header'>
+      
+      {/*HEADER PAGE */}
 
       <div className="header__top">
         <Container>
@@ -35,6 +60,8 @@ function Header() {
         </Container>
       </div>
 
+       {/* MİDDLE PAGE*/}
+
       <div className='header__middle'>
         <Container>
           <Row>
@@ -50,7 +77,7 @@ function Header() {
             </Col>
 
             <Col lg="3" md="3" sm="4" >
-                <div className='header__location'>
+                <div className='header__location d-flex align-items-center gap-2'>
                   <span><i className='ri-earth-line'></i></span>
                   <div className='header__location-content'>
                     <h4>Turkiye</h4>
@@ -60,7 +87,7 @@ function Header() {
             </Col>
 
             <Col lg="3" md="3" sm="4" >
-                <div className="header__location">
+                <div className="header__location d-flex align-items-center gap-2">
                   <span><i className='ri-time-line'></i></span>
                   <div className='header__location-content'>
                     <h4>Sunday to Friday</h4>
@@ -69,14 +96,43 @@ function Header() {
                 </div>
             </Col>
 
-            <Col lg="2" md="3" sm="0">
-              <button className='header__btn btn d-flex align-items-center justify-content-end text-end'>
+            <Col lg="2" md="3" sm="0" className="d-flex align-items-center justify-content-end ">
+              <button className="header__btn btn ">
                 <Link to="/contact">
-                 <i className='ri-phone-line'></i> Request a call
+                  <i class="ri-phone-line"></i> Request a call
                 </Link>
               </button>
             </Col>
           </Row>
+        </Container>
+      </div>
+      {/*MAİN PAGE */}
+
+      <div className='main__navbar'>
+        <Container>
+          <div className='navigation__wrapper d-flex align-items-center justify-content-between'>
+            <span className='mobile__menu'>
+              <i className='ri-menu-line'></i>
+            </span>
+
+            <div className='navigation'>
+              <div className="menu">
+                {
+                  navLinks.map((item,index)=>(
+                    <NavLink className={(navClass)=> navClass.isActive ? "nav__active nav__item" : "nav__item"} to={item.path} key={index}>{item.display}</NavLink>
+                  ))
+                }
+              </div>
+            </div>
+
+            <div className="nav__right">
+              <div className="search__box">
+                <input type="text" placeholder='search' />
+                <span><i className='ri-search-line'></i></span>
+              </div>
+            </div>
+
+          </div>
         </Container>
       </div>
     </header>
