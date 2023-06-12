@@ -32,7 +32,7 @@ function Footer() {
     <Container>
       <Row>
         <Col lg="2" md="4" sm="12">
-          <div className="logo">
+          <div className="logo footer__logo">
             <h1>
               <Link to="/home" className='d-flex align-items-center gap-2'>
                 <i className='ri-car-line'></i>
@@ -81,6 +81,7 @@ function Footer() {
               <input type="text" placeholder='email' />
               <span>
                 <i className='ri-send-plane-line'></i>
+                
               </span>
             </div>
           </div>
