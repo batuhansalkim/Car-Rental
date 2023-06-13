@@ -1,0 +1,65 @@
+.find__cars-left {
+  background: linear-gradient(rgb(249, 168, 38, 0.9), rgb(249, 168, 38, 0.9)),
+    url("../assets/all-images/toyota-offer-2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 65px 35px;
+}
+.form__group{
+    width: 30%;
+    margin-bottom: 0;
+}
+.form__group input{
+    border: 1px solid #7c8a97;
+    padding: 8px 12px;
+    width: 100%;
+    outline: none;
+}
+.form{
+    background: #fff;
+    padding: 55px 50px 15px 15px;
+}
+.select__group{
+    width: 30%;
+}
+
+.select__group select{
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #7c8a97;
+    outline: none;
+}
+.form__row {
+  background: #fff;
+  box-shadow: 5px 5px 15px -5px #7c8a97;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

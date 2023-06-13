@@ -37,4 +37,16 @@
     font-weight: 600;
 }
 
+.reserve__btn{
+  background: #fff !important;
+  color: #000db6 !important;
+  border: none;
+  outline: none;
+}
+.reserve__btn a{
+  text-decoration: none;
+  font-weight: 600;
+  color: #000db6;
+}
+
 
