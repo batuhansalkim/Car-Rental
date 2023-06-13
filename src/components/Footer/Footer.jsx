@@ -91,6 +91,7 @@ const Footer = () => {
               <p className="section__description">Subscribe our newsletter</p>
               <div className="newsletter">
                 <input type="email" placeholder="Email" />
+                
                 <span>
                   <i class="ri-send-plane-line"></i>
                 </span>
