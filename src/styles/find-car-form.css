@@ -9,7 +9,6 @@
 .find__cars-left h2{
     font-weight: 600;
     font-size: 2.8rem;
-    color: white;
 }
 .form__group{
     width: 30%;
@@ -67,15 +66,12 @@
     width: 100%;
     border: none;
     outline: none;
+    cursor: pointer;
 }
-/* .find__car-btn {
-  background: #000d6b !important;
-  color: #fff !important;
-  padding: 8px 15px;
-  width: 100%;
-  border: none;
-  outline: none;
-} */
+.find__car-btn:hover{
+    background: #000d6b !important;
+    color: white !important;
+}
 
 
 

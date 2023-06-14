@@ -4,6 +4,7 @@ import Helmet from '../components/Helmet/Helmet';
 import FindCarForm from '../components/UI/FindCarForm';
 import "../styles/hero-slider.css";
 import { Container,Row,Col } from 'reactstrap';
+import AboutSection from '../components/UI/AboutSection';
 
 function Home() {
   return <Helmet title="Home">
@@ -26,6 +27,7 @@ function Home() {
           </Container>
         </div>
     </section>
+    <AboutSection/>
   </Helmet>
 }
 
