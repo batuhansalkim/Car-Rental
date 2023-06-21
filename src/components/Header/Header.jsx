@@ -27,6 +27,9 @@ const navLinks = [
 ]
 
 function Header() {
+  const menuRef = useRef(null);
+    const toggleMenu = () => menuRef.current.classList.toggle("menu__active");
+
   return (
     <header className='header'>
       
@@ -112,10 +115,10 @@ function Header() {
         <Container>
           <div className='navigation__wrapper d-flex align-items-center justify-content-between'>
             <span className='mobile__menu'>
-              <i className='ri-menu-line'></i>
+              <i className='ri-menu-line' onClick={()=>toggleMenu()}></i>
             </span>
 
-            <div className='navigation'>
+            <div className='navigation' ref={menuRef} onClick={()=>toggleMenu()}>
               <div className="menu">
                 {
                   navLinks.map((item,index)=>(

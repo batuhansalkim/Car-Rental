@@ -73,7 +73,40 @@
     color: white !important;
 }
 
-
+@media only screen and (max-width:992px) {
+    .find__cars-left{
+        padding: 65px 22px;
+    }
+    .find__cars-left h2{
+        font-size: 1.5rem;
+    }
+    .form{
+        padding: 30px 10px;
+    }
+    .form__group input,
+    .select__group select {
+    padding: 7px 10px;
+    font-size: 0.8rem;
+  }
+  .hero__form{
+    bottom: -100px;
+  }
+}
+@media only screen and (max-width:768px) {
+    .form{
+        background: #f9a826;
+    }
+    .find__cars-left{
+        padding-top: 20px;
+        padding-bottom: 0;
+        background: #f9a826;
+        text-align: center;
+        color: #000000;
+    }
+}
+@media only screen and (max-width:576px) {
+    
+}
 
 
 
