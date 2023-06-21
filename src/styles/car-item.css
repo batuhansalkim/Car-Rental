@@ -26,10 +26,18 @@
     background: #f9a826;
     border-radius: 0px 4px 4px 0px;
 }
+
 .car__btn-rent{
     border-radius: 4px 0px 0px 4px;
 }
+.car__item-content h4 {
+  font-size: 1.8rem;
+}
 
+.car__item-content h6 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
 
 
 

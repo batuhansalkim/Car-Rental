@@ -8,6 +8,7 @@ import AboutSection from '../components/UI/AboutSection';
 import ServicesList from '../components/UI/ServicesList';
 import CarItem from '../components/UI/CarItem';
 import carData from "../assets/data/carData";
+import BecomeDriverSection from '../components/UI/BecomeDriverSection';
 
 function Home() {
   return <Helmet title="Home">
@@ -61,6 +62,7 @@ function Home() {
         </Row>
       </Container>
     </section>
+    <BecomeDriverSection/>
   </Helmet>
 }
 
