@@ -6,6 +6,8 @@ import "../styles/hero-slider.css";
 import { Container,Row,Col } from 'reactstrap';
 import AboutSection from '../components/UI/AboutSection';
 import ServicesList from '../components/UI/ServicesList';
+import CarItem from '../components/UI/CarItem';
+import carData from "../assets/data/carData";
 
 function Home() {
   return <Helmet title="Home">
@@ -42,6 +44,22 @@ function Home() {
         </Row>
       </Container>
       
+    </section>
+
+    <section>
+      <Container>
+        <Row>
+          <Col lg="12" className='text-center mb-5'>
+            <h6 className='section__subtitle'>Come With</h6>
+            <h2 className='section__title'>Hot Offers</h2>
+          </Col>
+          {
+            carData.slice(0, 6).map((item,index)=>(
+              <CarItem item={item} key={index}/>
+            ))
+          }
+        </Row>
+      </Container>
     </section>
   </Helmet>
 }
