@@ -127,6 +127,7 @@
   }
   .hero__form{
     bottom: -250px;
+    padding-bottom: 20px;
     z-index: 999;
   }
 }
