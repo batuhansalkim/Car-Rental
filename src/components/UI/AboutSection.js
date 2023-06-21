@@ -3,7 +3,7 @@ import {Container,Row,Col} from "reactstrap";
 import "../../styles/aboutSection.css";
 import aboutImg from "../../assets/all-images/cars-img/bmw-offer.png";
 function AboutSection() {
-  return <section>
+  return <section className='about__section'>
     <Container>
           <Row className='about__container'>
             <Col lg="6" md="6" >
