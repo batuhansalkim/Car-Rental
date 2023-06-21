@@ -69,3 +69,22 @@
   font-size: 17px;
   color: #f9a826;
 }
+@media only screen and (max-width: 768px) {
+  .footer__logo-content {
+    font-size: 0.8rem;
+  }
+
+  .quick__link,
+  .office__info {
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+  }
+  .footer__link-title {
+    font-size: 1rem;
+    margin-top: 15px;
+  }
+
+  .footer__bottom p {
+    font-size: 0.7rem;
+  }
+}

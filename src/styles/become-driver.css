@@ -18,8 +18,34 @@
   line-height: 65px;
 }
 
-
-
+@media only screen and (max-width: 992px) {
+  .become__driver-title{
+    font-size: 1.5rem;
+    line-height: 3rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .become__driver{
+    padding: 50px 0px;
+  }
+  .become__driver-title{
+    font-size: 1.3rem;
+    line-height: 2.5rem;
+    text-align: center;
+  }
+  .become__driver-btn {
+    font-size: 0.8rem !important;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .become__driver-img {
+    display: none;
+  }
+  .become__driver {
+    text-align: center;
+  }
+}
 
 
 

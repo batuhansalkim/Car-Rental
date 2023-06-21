@@ -11,3 +11,20 @@
 .service__item h6:hover {
   color: #f9a826;
 }
+@media only screen and (max-width: 768px) {
+  .service__item h6 {
+    font-size: 1.1rem;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .service__item{
+    position: relative;
+    border: 1px solid rgba(0, 150, 205, 0.503);
+    text-align: center;
+  
+  }
+  .batu__container{
+    position: relative;
+    width: 50%;
+  }
+}
